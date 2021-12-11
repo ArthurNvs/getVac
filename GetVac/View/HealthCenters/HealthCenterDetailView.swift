@@ -25,13 +25,12 @@ struct HealthCenterDetailView: View {
               .frame(height: 6)
           )
         
+        
         MapView(coordinate: healthCenter.locationCoordinate)
                 .ignoresSafeArea(edges: .top)
                 .frame(height: 300)
         
         HeadingView(headingImage: "clock.fill", headingText: "\(healthCenter.hours)")
-        
-
         
       } //: VStack
     } //: ScrollView

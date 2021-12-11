@@ -53,6 +53,10 @@ struct InfoMainView: View {
     
     Spacer()
     
+    AdditionalInfo()
+    
+    Spacer()
+    
     Text("Dados disponibilizados pelo GDF")
       .font(.footnote)
       .fontWeight(.bold)

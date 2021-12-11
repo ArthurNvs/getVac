@@ -12,7 +12,7 @@ import MapKit
 struct MapView: View {
   var coordinate: CLLocationCoordinate2D
   let point = [
-    AnnotatedItem(name: "Location", coordinate: .init(latitude: -15.742946310268854, longitude: -47.891445397031276))
+    AnnotatedItem(name: "Location", coordinate: .init(latitude: 0, longitude: 0))
   ]
   
   @State private var region = MKCoordinateRegion(
@@ -28,7 +28,7 @@ struct MapView: View {
   }
   
   var body: some View {
-    Map(coordinateRegion: $region, annotationItems: point, annotationContent: {item in
+    Map(coordinateRegion: $region, annotationItems: point, annotationContent: { item in
       MapAnnotation(coordinate: coordinate) {
         MapAnnotationView()
       }
@@ -40,9 +40,9 @@ struct MapView: View {
 }
 
 struct AnnotatedItem: Identifiable {
-    let id = UUID()
-    var name: String
-    var coordinate: CLLocationCoordinate2D
+  let id = UUID()
+  var name: String
+  var coordinate: CLLocationCoordinate2D
 }
 
 struct MapView_Previews: PreviewProvider {
