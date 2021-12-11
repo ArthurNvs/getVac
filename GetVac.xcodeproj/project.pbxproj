@@ -10,6 +10,8 @@
 		E7A19A992765323B00874A8C /* HealthCenterDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A19A982765323B00874A8C /* HealthCenterDetailView.swift */; };
 		E7A19A9C2765352D00874A8C /* CurrentTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A19A9B2765352D00874A8C /* CurrentTime.swift */; };
 		E7A19A9E276536F400874A8C /* HeadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A19A9D276536F400874A8C /* HeadingView.swift */; };
+		E7A19AA027653A3E00874A8C /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A19A9F27653A3E00874A8C /* MapView.swift */; };
+		E7A19AA327653E9600874A8C /* MapAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A19AA227653E9600874A8C /* MapAnnotationView.swift */; };
 		E7B4E6C727650B28009464B1 /* GetVacApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B4E6C627650B28009464B1 /* GetVacApp.swift */; };
 		E7B4E6C927650B28009464B1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B4E6C827650B28009464B1 /* ContentView.swift */; };
 		E7B4E6CB27650B28009464B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7B4E6CA27650B28009464B1 /* Assets.xcassets */; };
@@ -25,6 +27,8 @@
 		E7A19A982765323B00874A8C /* HealthCenterDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthCenterDetailView.swift; sourceTree = "<group>"; };
 		E7A19A9B2765352D00874A8C /* CurrentTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentTime.swift; sourceTree = "<group>"; };
 		E7A19A9D276536F400874A8C /* HeadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadingView.swift; sourceTree = "<group>"; };
+		E7A19A9F27653A3E00874A8C /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		E7A19AA227653E9600874A8C /* MapAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapAnnotationView.swift; sourceTree = "<group>"; };
 		E7B4E6C327650B28009464B1 /* GetVac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GetVac.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7B4E6C627650B28009464B1 /* GetVacApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetVacApp.swift; sourceTree = "<group>"; };
 		E7B4E6C827650B28009464B1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -55,6 +59,15 @@
 				E7A19A9B2765352D00874A8C /* CurrentTime.swift */,
 			);
 			path = Helper;
+			sourceTree = "<group>";
+		};
+		E7A19AA127653AA700874A8C /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				E7A19A9F27653A3E00874A8C /* MapView.swift */,
+				E7A19AA227653E9600874A8C /* MapAnnotationView.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		E7B4E6BA27650B28009464B1 = {
@@ -99,6 +112,7 @@
 		E7B4E6D427650BBE009464B1 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E7A19AA127653AA700874A8C /* Helpers */,
 				E7B4E6EA27652B95009464B1 /* Info */,
 				E7B4E6E127651ED9009464B1 /* HealthCenters */,
 				E7B4E6C827650B28009464B1 /* ContentView.swift */,
@@ -212,6 +226,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7A19AA327653E9600874A8C /* MapAnnotationView.swift in Sources */,
 				E7B4E6E727651F47009464B1 /* HealthCenterListView.swift in Sources */,
 				E7B4E6EC27652BCB009464B1 /* InfoMainView.swift in Sources */,
 				E7B4E6DE276514D8009464B1 /* HealthCenter.swift in Sources */,
@@ -219,6 +234,7 @@
 				E7A19A9E276536F400874A8C /* HeadingView.swift in Sources */,
 				E7A19A992765323B00874A8C /* HealthCenterDetailView.swift in Sources */,
 				E7B4E6C927650B28009464B1 /* ContentView.swift in Sources */,
+				E7A19AA027653A3E00874A8C /* MapView.swift in Sources */,
 				E7A19A9C2765352D00874A8C /* CurrentTime.swift in Sources */,
 				E7B4E6C727650B28009464B1 /* GetVacApp.swift in Sources */,
 			);

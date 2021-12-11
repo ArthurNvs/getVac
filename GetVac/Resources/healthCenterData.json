@@ -6,8 +6,8 @@
         "hours": "9h - 17h",
         "id": 1001,
         "coordinates": {
-            "longitude": -116.166868,
-            "latitude": 34.011286
+            "longitude": -47.891445397031276,
+            "latitude": -15.742946310268854
         },
         "doses": {
           "d1": ["AstraZeneca", "CoronaVac", "Pfizer"],
