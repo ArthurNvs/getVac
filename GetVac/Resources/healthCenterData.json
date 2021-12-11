@@ -1,0 +1,69 @@
+[
+    {
+        "name": "UBS 2",
+        "city": "Asa Norte",
+        "state": "Distrito Federal",
+        "id": 1001,
+        "coordinates": {
+            "longitude": -116.166868,
+            "latitude": 34.011286
+        },
+        "doses": {
+          "d1": ["AstraZeneca", "CoronaVac", "Pfizer"],
+          "d2": ["AstraZeneca", "CoronaVac", "Pfizer"],
+          "booster": ["Pfizer-BioNTech"],
+          "aditional": "Imunossuprimidos"
+        }
+    },
+    
+    {
+        "name": "UBS 3",
+        "city": "Taguatinga",
+        "state": "Distrito Federal",
+        "id": 1002,
+        "coordinates": {
+            "longitude": -116.166868,
+            "latitude": 34.011286
+        },
+        "doses": {
+          "d1": ["AstraZeneca", "CoronaVac", "Pfizer"],
+          "d2": ["AstraZeneca", "CoronaVac", "Pfizer"],
+          "booster": ["Janssen", "Pfizer-BioNTech"],
+          "aditional": "Imunossuprimidos"
+        }
+    },
+    
+    {
+        "name": "UBS 1",
+        "city": "Riacho Fundo I",
+        "state": "Distrito Federal",
+        "id": 1003,
+        "coordinates": {
+            "longitude": -116.166868,
+            "latitude": 34.011286
+        },
+        "doses": {
+          "d1": ["AstraZeneca", "CoronaVac", "Pfizer"],
+          "d2": ["AstraZeneca", "CoronaVac", "Pfizer"],
+          "booster": ["Pfizer-BioNTech"],
+          "aditional": "Imunossuprimidos"
+        }
+    },
+    
+    {
+        "name": "UBS 7",
+        "city": "Ceilandia",
+        "state": "Distrito Federal",
+        "id": 1004,
+        "coordinates": {
+            "longitude": -116.166868,
+            "latitude": 34.011286
+        },
+        "doses": {
+          "d1": ["AstraZeneca", "CoronaVac", "Pfizer"],
+          "d2": ["AstraZeneca", "CoronaVac", "Pfizer"],
+          "booster": ["Janssen", "Pfizer-BioNTech"],
+          "aditional": "Imunossuprimidos"
+        }
+    }
+]
