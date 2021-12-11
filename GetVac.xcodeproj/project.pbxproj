@@ -11,8 +11,10 @@
 		E7B4E6C927650B28009464B1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B4E6C827650B28009464B1 /* ContentView.swift */; };
 		E7B4E6CB27650B28009464B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7B4E6CA27650B28009464B1 /* Assets.xcassets */; };
 		E7B4E6CE27650B28009464B1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7B4E6CD27650B28009464B1 /* Preview Assets.xcassets */; };
-		E7B4E6DE276514D8009464B1 /* HealthCenterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B4E6DD276514D8009464B1 /* HealthCenterModel.swift */; };
+		E7B4E6DE276514D8009464B1 /* HealthCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B4E6DD276514D8009464B1 /* HealthCenter.swift */; };
 		E7B4E6E027651680009464B1 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B4E6DF27651680009464B1 /* ModelData.swift */; };
+		E7B4E6E727651F47009464B1 /* HealthCenterListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B4E6E627651F47009464B1 /* HealthCenterListView.swift */; };
+		E7B4E6E927652132009464B1 /* healthCenterData.json in Resources */ = {isa = PBXBuildFile; fileRef = E7B4E6E827652132009464B1 /* healthCenterData.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,10 +23,11 @@
 		E7B4E6C827650B28009464B1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E7B4E6CA27650B28009464B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E7B4E6CD27650B28009464B1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		E7B4E6DB27650E13009464B1 /* healthCenterData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = healthCenterData.json; sourceTree = "<group>"; };
 		E7B4E6DC27651420009464B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		E7B4E6DD276514D8009464B1 /* HealthCenterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthCenterModel.swift; sourceTree = "<group>"; };
+		E7B4E6DD276514D8009464B1 /* HealthCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthCenter.swift; sourceTree = "<group>"; };
 		E7B4E6DF27651680009464B1 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
+		E7B4E6E627651F47009464B1 /* HealthCenterListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthCenterListView.swift; sourceTree = "<group>"; };
+		E7B4E6E827652132009464B1 /* healthCenterData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = healthCenterData.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +82,7 @@
 		E7B4E6D427650BBE009464B1 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E7B4E6E127651ED9009464B1 /* HealthCenters */,
 				E7B4E6C827650B28009464B1 /* ContentView.swift */,
 			);
 			path = View;
@@ -87,7 +91,7 @@
 		E7B4E6D927650C28009464B1 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				E7B4E6DD276514D8009464B1 /* HealthCenterModel.swift */,
+				E7B4E6DD276514D8009464B1 /* HealthCenter.swift */,
 				E7B4E6DF27651680009464B1 /* ModelData.swift */,
 			);
 			path = Model;
@@ -96,9 +100,17 @@
 		E7B4E6DA27650D99009464B1 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				E7B4E6DB27650E13009464B1 /* healthCenterData.json */,
+				E7B4E6E827652132009464B1 /* healthCenterData.json */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		E7B4E6E127651ED9009464B1 /* HealthCenters */ = {
+			isa = PBXGroup;
+			children = (
+				E7B4E6E627651F47009464B1 /* HealthCenterListView.swift */,
+			);
+			path = HealthCenters;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,6 +172,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E7B4E6CE27650B28009464B1 /* Preview Assets.xcassets in Resources */,
+				E7B4E6E927652132009464B1 /* healthCenterData.json in Resources */,
 				E7B4E6CB27650B28009464B1 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -171,7 +184,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E7B4E6DE276514D8009464B1 /* HealthCenterModel.swift in Sources */,
+				E7B4E6E727651F47009464B1 /* HealthCenterListView.swift in Sources */,
+				E7B4E6DE276514D8009464B1 /* HealthCenter.swift in Sources */,
 				E7B4E6E027651680009464B1 /* ModelData.swift in Sources */,
 				E7B4E6C927650B28009464B1 /* ContentView.swift in Sources */,
 				E7B4E6C727650B28009464B1 /* GetVacApp.swift in Sources */,

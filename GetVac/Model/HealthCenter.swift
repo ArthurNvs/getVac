@@ -9,11 +9,12 @@ import Foundation
 import SwiftUI
 import CoreLocation
 
-struct HealthCenterModel: Hashable, Codable, Identifiable {
+struct HealthCenter: Hashable, Codable, Identifiable {
   var id: Int
   var name: String
   var city: String
   var state: String
+  var hours: String
   
   var doses: Doses
   struct Doses: Hashable, Codable {
