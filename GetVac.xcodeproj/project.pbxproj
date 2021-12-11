@@ -15,6 +15,7 @@
 		E7B4E6E027651680009464B1 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B4E6DF27651680009464B1 /* ModelData.swift */; };
 		E7B4E6E727651F47009464B1 /* HealthCenterListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B4E6E627651F47009464B1 /* HealthCenterListView.swift */; };
 		E7B4E6E927652132009464B1 /* healthCenterData.json in Resources */ = {isa = PBXBuildFile; fileRef = E7B4E6E827652132009464B1 /* healthCenterData.json */; };
+		E7B4E6EC27652BCB009464B1 /* InfoMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B4E6EB27652BCB009464B1 /* InfoMainView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		E7B4E6DF27651680009464B1 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
 		E7B4E6E627651F47009464B1 /* HealthCenterListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthCenterListView.swift; sourceTree = "<group>"; };
 		E7B4E6E827652132009464B1 /* healthCenterData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = healthCenterData.json; sourceTree = "<group>"; };
+		E7B4E6EB27652BCB009464B1 /* InfoMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoMainView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 		E7B4E6D427650BBE009464B1 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E7B4E6EA27652B95009464B1 /* Info */,
 				E7B4E6E127651ED9009464B1 /* HealthCenters */,
 				E7B4E6C827650B28009464B1 /* ContentView.swift */,
 			);
@@ -111,6 +114,14 @@
 				E7B4E6E627651F47009464B1 /* HealthCenterListView.swift */,
 			);
 			path = HealthCenters;
+			sourceTree = "<group>";
+		};
+		E7B4E6EA27652B95009464B1 /* Info */ = {
+			isa = PBXGroup;
+			children = (
+				E7B4E6EB27652BCB009464B1 /* InfoMainView.swift */,
+			);
+			path = Info;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -185,6 +196,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E7B4E6E727651F47009464B1 /* HealthCenterListView.swift in Sources */,
+				E7B4E6EC27652BCB009464B1 /* InfoMainView.swift in Sources */,
 				E7B4E6DE276514D8009464B1 /* HealthCenter.swift in Sources */,
 				E7B4E6E027651680009464B1 /* ModelData.swift in Sources */,
 				E7B4E6C927650B28009464B1 /* ContentView.swift in Sources */,
