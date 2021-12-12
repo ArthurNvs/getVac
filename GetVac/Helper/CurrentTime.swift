@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import SwiftUI
 
 func getDate() -> String{
   let time = Date()
@@ -13,4 +14,36 @@ func getDate() -> String{
   timeFormatter.dateFormat = "dd/MM/yy"
   let stringDate = timeFormatter.string(from: time)
   return stringDate
+}
+
+func getHour() -> String {
+  let time = Date()
+  let timeFormatter = DateFormatter()
+  timeFormatter.dateFormat = "HH"
+  let stringDate = timeFormatter.string(from: time)
+  return stringDate
+}
+
+func getGreeting() -> String {
+  if Int(getHour())! < 19 && Int(getHour())! > 12 {
+    return "Olá, boa tarde!"
+  }
+  
+  if Int(getHour())! < 12 && Int(getHour())! > 23 {
+    return "Olá, bom dia!"
+  }
+  
+  return "Olá, boa noite!"
+}
+
+func getHourImage() -> String {
+  if Int(getHour())! < 19 && Int(getHour())! > 12 {
+    return "sun.max.fill"
+  }
+  
+  if Int(getHour())! < 12 && Int(getHour())! > 23 {
+    return "sunrise.fill"
+  }
+  
+  return "moon.stars.fill"
 }

@@ -25,32 +25,44 @@ struct InfoMainView: View {
             .background(Color.white.frame(height: 100))
             .shadow(color: Color.black.opacity(0.05), radius: 5, x: 0, y: 5)
           
-          Spacer()
-          
-          
-          Spacer()
-          
-          VStack {
-            AsyncImageView(imageURL: "https://www.saude.df.gov.br/wp-conteudo/uploads/2021/02/PONTOS_VAC_FDS-1-1.png")
-            //https://www.saude.df.gov.br/wp-conteudo/uploads/2021/01/Cobertura-vacinal.png
-              .frame(height: 370)
-          }
-          Text("Postos de vacinação COVID-19 (\(getDate()))")
-            .italic()
-            .font(.footnote)
-            .fontWeight(.bold)
-            .foregroundColor(.gray)
-          
-          AdditionalInfo()
-            .padding()
-          
-          Spacer()
-          
-          Text("Dados disponibilizados pela Secretaria de Saúde")
-            .font(.footnote)
-            .fontWeight(.bold)
-            .foregroundColor(.accentColor)
-        } //: VStack
+          ScrollView {
+            Spacer()
+            
+            VStack {
+              Image(systemName: getHourImage())
+                .foregroundColor(.accentColor)
+              
+              
+              Text(getGreeting())
+                .font(.title3)
+                .fontWeight(.semibold)
+                .foregroundColor(.accentColor)
+                .padding(.top, 10)
+            }
+            
+            VStack {
+              AsyncImageView(imageURL: "https://www.saude.df.gov.br/wp-conteudo/uploads/2021/02/PONTOS_VAC_FDS-1-1.png")
+                .frame(height: 370)
+            }
+            Text("Postos de vacinação COVID-19 (\(getDate()))")
+              .italic()
+              .font(.footnote)
+              .fontWeight(.bold)
+              .foregroundColor(.gray)
+            
+            Spacer()
+            
+            AdditionalInfo()
+              .padding()
+            
+            Spacer()
+            
+            Text("Dados disponibilizados pela Secretaria de Saúde")
+              .font(.footnote)
+              .fontWeight(.bold)
+              .foregroundColor(.accentColor)
+          } //: VStack
+        } //: ScrollView
       } else {
         HealthCenterListView(healthCenters: ModelData().healthCenters)
       }

@@ -18,15 +18,37 @@ struct HealthCenterListView: View {
         .background(Color.white.frame(height: 100))
       
       NavigationView {
-          VStack {
-            List {
-              ForEach(healthCenters) { item in
-                NavigationLink(destination: HealthCenterDetailView(healthCenter: item)) {
-                  HealthCenterItemListView(healthCenter: item)
-                }
-              } //: ForEach
-            } //: List
-          } //: VStack
+        VStack {
+          List {
+            ForEach(healthCenters) { item in
+              NavigationLink(destination: HealthCenterDetailView(healthCenter: item)) {
+                HealthCenterItemListView(healthCenter: item)
+              }
+            } //: ForEach
+          } //: List
+          
+          Spacer()
+          
+          NavigationLink(destination: GifImage("vacinometro")) {
+            VStack {
+              HStack {
+                Text("VACINÔMETRO")
+                  .font(.title3)
+                  .fontWeight(.heavy)
+                  .foregroundColor(.accentColor)
+                
+                Image(systemName: "arrow.right.circle.fill")
+              }
+              
+              Text("Confira aqui o status da vacinação no DF")
+                .font(.footnote)
+                .multilineTextAlignment(.center)
+                .lineLimit(2)
+              
+            } //: VStack
+          } //: NavigationList
+          .padding()
+        } //: VStack
       } //: NavigationView
       .navigationBarTitle(Text("Current Name"), displayMode: .inline)
     } //: VStack
