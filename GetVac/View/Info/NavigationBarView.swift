@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct NavigationBarView: View {
-  
+  @EnvironmentObject var viewStatus: ViewStatus
   @State private var isAnimated = false
   
   var body: some View {
@@ -22,7 +22,19 @@ struct NavigationBarView: View {
         //.shadow(color: Color.gray, radius: 3, x: 1, y: 1)
         .foregroundColor(.accentColor)
         .offset(x: 0, y: isAnimated ? 0 : -25)
+      
       Spacer()
+      
+      Image(systemName: "list.triangle")
+        .font(.largeTitle)
+        .foregroundColor(.blue)
+        .padding()
+        .onTapGesture {
+          withAnimation(.easeOut) {
+            viewStatus.showList = true
+          }
+        }
+      
     } //: HStack
     .onAppear(perform: {
       withAnimation(.easeOut(duration: 0.5)) {
