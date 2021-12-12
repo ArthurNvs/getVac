@@ -18,9 +18,9 @@ struct HealthCenter: Hashable, Codable, Identifiable {
   var image: String
   
   private var doses: Doses
-  var d1: [String] {
-    return doses.d1
-  }
+  var d1: [String] { return doses.d1 }
+  var d2: [String] { return doses.d2 }
+  var booster: [String] { return doses.booster }
   var additional: String {
     return doses.aditional
   }

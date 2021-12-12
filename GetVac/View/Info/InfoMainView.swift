@@ -46,7 +46,6 @@ struct InfoMainView: View {
           } //: VStack
           .padding()
         } //: VStack
-        //.background(Color(.lightGray).ignoresSafeArea(.all, edges: .all))
       } else {
         HealthCenterListView(healthCenters: ModelData().healthCenters)
       }

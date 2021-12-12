@@ -23,8 +23,11 @@ struct HealthCenterDosesView: View {
             
             Spacer(minLength: 25)
             
-            Text("\(healthCenter.d1[0]), \(healthCenter.d1[1])")
-              .multilineTextAlignment(.trailing)
+            VStack(spacing: 5) {
+              ForEach(healthCenter.d1, id: \.self) { item in
+                Text(item)
+              }
+            }
           }
           Divider().padding(.vertical, 2)
           HStack {
@@ -34,8 +37,13 @@ struct HealthCenterDosesView: View {
             .font(Font.system(.body).bold())
             
             Spacer(minLength: 25)
-            Text("cinco meses após a segunda dose")
-              .multilineTextAlignment(.trailing)
+            
+            VStack(spacing: 5) {
+              ForEach(healthCenter.d2, id: \.self) { item in
+                Text("\(item)")
+                  .multilineTextAlignment(.trailing)
+              }
+            }
           }
           Divider().padding(.vertical, 2)
           HStack {
@@ -45,8 +53,13 @@ struct HealthCenterDosesView: View {
             .font(Font.system(.body).bold())
             
             Spacer(minLength: 25)
-            Text("28 dias após a segunda dose")
-              .multilineTextAlignment(.trailing)
+            
+            VStack(spacing: 5) {
+              ForEach(healthCenter.booster, id: \.self) { item in
+                Text("\(item)")
+                  .multilineTextAlignment(.trailing)
+              }
+            }
           }
           Divider().padding(.vertical, 2)
           HStack {
@@ -56,6 +69,7 @@ struct HealthCenterDosesView: View {
             .font(Font.system(.body).bold())
             
             Spacer(minLength: 25)
+            
             Text("\(healthCenter.additional)")
               .multilineTextAlignment(.trailing)
           }
@@ -64,6 +78,7 @@ struct HealthCenterDosesView: View {
           HStack(spacing: 20) {
             Image(systemName: "info.circle")
             Text("DOSES DISPONÍVEIS")
+              .fontWeight(.bold)
           }
         })
     }

@@ -12,29 +12,32 @@ struct HealthCenterDetailView: View {
   
   var body: some View {
     VStack(alignment: .center, spacing: 10) {
-      // Title
-      Text(healthCenter.name.uppercased() + "\n" + healthCenter.city.uppercased())
-        .font(.largeTitle)
-        .fontWeight(.heavy)
-        .multilineTextAlignment(.center)
-        .padding(.vertical, 8)
-        .foregroundColor(.primary)
-        .background(
-          Color("BlueColor")
-            .frame(height: 6)
-        )
-      
-      ScrollView {
+      ScrollView(showsIndicators: false) {
+        // Title
+        Text(healthCenter.name.uppercased() + "\n" + healthCenter.city.uppercased())
+          .font(.largeTitle)
+          .fontWeight(.heavy)
+          .multilineTextAlignment(.center)
+          .padding(.vertical, 8)
+          .foregroundColor(.primary)
+          .background(
+            Color("BlueColor")
+              .frame(height: 6)
+          )
+        
         MapView(coordinate: healthCenter.locationCoordinate)
           .ignoresSafeArea(edges: .top)
           .frame(height: 300)
         
-        HStack {
-          Text("Horário de Funcionamento:")
-          Spacer()
-          HeadingView(headingImage: "clock.fill", headingText: "\(healthCenter.hours)")
-        }
-        .padding()
+        HeadingView(headingImage: "clock.fill", headingText: "\(healthCenter.hours)")
+        
+        Image(healthCenter.image)
+          .resizable()
+          .scaledToFill()
+          .frame(width: 300, height: 300)
+          .clipShape(
+            RoundedRectangle(cornerRadius: 9)
+          )
         
         Spacer()
         
@@ -44,7 +47,7 @@ struct HealthCenterDetailView: View {
           .font(.footnote)
           .fontWeight(.bold)
           .foregroundColor(.accentColor)
-      }
+      } //: ScrollView
     } //: VStack
     .padding()
   } //: ScrollView

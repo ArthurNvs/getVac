@@ -51,6 +51,7 @@ struct AdditionalInfo: View {
           HStack(spacing: 20) {
             Image(systemName: "info.circle")
             Text("DOSE ADICIONAL / REFORÇO")
+              .fontWeight(.bold)
           }
         })
     }
