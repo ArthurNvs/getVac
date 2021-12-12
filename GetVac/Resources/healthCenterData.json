@@ -24,8 +24,8 @@
         "hours": "9h - 17h",
         "id": 1002,
         "coordinates": {
-            "longitude": -116.166868,
-            "latitude": 34.011286
+            "longitude": -48.07745145397705,
+            "latitude": -15.833146187153028
         },
         "doses": {
           "d1": ["AstraZeneca", "CoronaVac", "Pfizer"],
@@ -42,8 +42,8 @@
         "hours": "9h - 17h",
         "id": 1003,
         "coordinates": {
-            "longitude": -116.166868,
-            "latitude": 34.011286
+            "longitude": -48.023873446022954,
+            "latitude": -15.884741752130726
         },
         "doses": {
           "d1": ["AstraZeneca", "CoronaVac", "Pfizer"],
@@ -60,8 +60,8 @@
         "hours": "9h - 17h",
         "id": 1004,
         "coordinates": {
-            "longitude": -116.166868,
-            "latitude": 34.011286
+            "longitude": -48.130889853977045,
+            "latitude": -15.795395441433019
         },
         "doses": {
           "d1": ["AstraZeneca", "CoronaVac", "Pfizer"],
