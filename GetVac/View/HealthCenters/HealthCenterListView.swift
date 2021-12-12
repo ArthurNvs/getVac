@@ -19,16 +19,16 @@ struct HealthCenterListView: View {
       
       NavigationView {
           VStack {
-            
             List {
               ForEach(healthCenters) { item in
                 NavigationLink(destination: HealthCenterDetailView(healthCenter: item)) {
-                  Text("\(item.name) - \(item.city)")
+                  HealthCenterItemListView(healthCenter: item)
                 }
               } //: ForEach
             } //: List
-          }
+          } //: VStack
       } //: NavigationView
+      .navigationBarTitle(Text("Current Name"), displayMode: .inline)
     } //: VStack
   }
 }

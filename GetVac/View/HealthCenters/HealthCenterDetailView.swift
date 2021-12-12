@@ -29,24 +29,22 @@ struct HealthCenterDetailView: View {
           .ignoresSafeArea(edges: .top)
           .frame(height: 300)
         
-        VStack {
-          HStack {
-            Text("Horário de Funcionamento:")
-            Spacer()
-            HeadingView(headingImage: "clock.fill", headingText: "\(healthCenter.hours)")
-          }
-          .padding()
-          
+        HStack {
+          Text("Horário de Funcionamento:")
           Spacer()
-          
-          HealthCenterDosesView(healthCenter: healthCenter)
-          
+          HeadingView(headingImage: "clock.fill", headingText: "\(healthCenter.hours)")
         }
-      } //: ScrollView
-      Text("Desenvolvido por Arthur Neves")
-        .font(.footnote)
-        .fontWeight(.bold)
-        .foregroundColor(.accentColor)
+        .padding()
+        
+        Spacer()
+        
+        HealthCenterDosesView(healthCenter: healthCenter)
+        
+        Text("Desenvolvido por Arthur Neves")
+          .font(.footnote)
+          .fontWeight(.bold)
+          .foregroundColor(.accentColor)
+      }
     } //: VStack
     .padding()
   } //: ScrollView

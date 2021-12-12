@@ -4,6 +4,7 @@
         "city": "Asa Norte",
         "state": "Distrito Federal",
         "hours": "9h - 17h",
+        "image":"ubs2-asa-norte",
         "id": 1001,
         "coordinates": {
             "longitude": -47.891445397031276,
@@ -22,6 +23,7 @@
         "city": "Taguatinga",
         "state": "Distrito Federal",
         "hours": "9h - 17h",
+        "image":"ubs3-taguatinga",
         "id": 1002,
         "coordinates": {
             "longitude": -48.07745145397705,
@@ -40,6 +42,7 @@
         "city": "Riacho Fundo I",
         "state": "Distrito Federal",
         "hours": "9h - 17h",
+        "image":"ub1-riacho-fundo-i",
         "id": 1003,
         "coordinates": {
             "longitude": -48.023873446022954,
@@ -58,6 +61,7 @@
         "city": "Ceilandia",
         "state": "Distrito Federal",
         "hours": "9h - 17h",
+        "image":"ubs7-ceilandia",
         "id": 1004,
         "coordinates": {
             "longitude": -48.130889853977045,

@@ -15,6 +15,7 @@ struct HealthCenter: Hashable, Codable, Identifiable {
   var city: String
   var state: String
   var hours: String
+  var image: String
   
   private var doses: Doses
   var d1: [String] {
