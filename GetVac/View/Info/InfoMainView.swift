@@ -42,8 +42,8 @@ struct InfoMainView: View {
             Text("Dados disponibilizados pela Secretaria de Saúde")
               .font(.footnote)
               .fontWeight(.bold)
-              .foregroundColor(.white)
-          } //: ScrollView
+              .foregroundColor(.accentColor)
+          } //: VStack
           .padding()
         } //: VStack
         //.background(Color(.lightGray).ignoresSafeArea(.all, edges: .all))

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		E71F3DD327655F9C00B86C9F /* NavigationBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71F3DD227655F9C00B86C9F /* NavigationBarView.swift */; };
 		E71F3DD8276587AA00B86C9F /* ViewStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71F3DD7276587AA00B86C9F /* ViewStatus.swift */; };
+		E71F3DDA27659B2900B86C9F /* HealthCenterDosesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71F3DD927659B2900B86C9F /* HealthCenterDosesView.swift */; };
 		E7A19A992765323B00874A8C /* HealthCenterDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A19A982765323B00874A8C /* HealthCenterDetailView.swift */; };
 		E7A19A9C2765352D00874A8C /* CurrentTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A19A9B2765352D00874A8C /* CurrentTime.swift */; };
 		E7A19A9E276536F400874A8C /* HeadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A19A9D276536F400874A8C /* HeadingView.swift */; };
@@ -30,6 +31,7 @@
 /* Begin PBXFileReference section */
 		E71F3DD227655F9C00B86C9F /* NavigationBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarView.swift; sourceTree = "<group>"; };
 		E71F3DD7276587AA00B86C9F /* ViewStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewStatus.swift; sourceTree = "<group>"; };
+		E71F3DD927659B2900B86C9F /* HealthCenterDosesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthCenterDosesView.swift; sourceTree = "<group>"; };
 		E7A19A982765323B00874A8C /* HealthCenterDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthCenterDetailView.swift; sourceTree = "<group>"; };
 		E7A19A9B2765352D00874A8C /* CurrentTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentTime.swift; sourceTree = "<group>"; };
 		E7A19A9D276536F400874A8C /* HeadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadingView.swift; sourceTree = "<group>"; };
@@ -160,6 +162,7 @@
 			children = (
 				E7B4E6E627651F47009464B1 /* HealthCenterListView.swift */,
 				E7A19A982765323B00874A8C /* HealthCenterDetailView.swift */,
+				E71F3DD927659B2900B86C9F /* HealthCenterDosesView.swift */,
 			);
 			path = HealthCenters;
 			sourceTree = "<group>";
@@ -246,6 +249,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E71F3DDA27659B2900B86C9F /* HealthCenterDosesView.swift in Sources */,
 				E7A19AA52765512C00874A8C /* AdditionalInfo.swift in Sources */,
 				E7A19AA327653E9600874A8C /* MapAnnotationView.swift in Sources */,
 				E7B4E6E727651F47009464B1 /* HealthCenterListView.swift in Sources */,

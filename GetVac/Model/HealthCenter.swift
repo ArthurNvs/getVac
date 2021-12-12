@@ -16,7 +16,13 @@ struct HealthCenter: Hashable, Codable, Identifiable {
   var state: String
   var hours: String
   
-  var doses: Doses
+  private var doses: Doses
+  var d1: [String] {
+    return doses.d1
+  }
+  var additional: String {
+    return doses.aditional
+  }
   struct Doses: Hashable, Codable {
     var d1: [String]
     var d2: [String]

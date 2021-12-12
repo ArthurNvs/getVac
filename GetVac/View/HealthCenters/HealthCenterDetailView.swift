@@ -11,28 +11,45 @@ struct HealthCenterDetailView: View {
   let healthCenter: HealthCenter
   
   var body: some View {
-    ScrollView(.vertical, showsIndicators: false) {
-      VStack(alignment: .center, spacing: 20) {
-        // Title
-        Text(healthCenter.name.uppercased() + "\n" + healthCenter.city.uppercased())
-          .font(.largeTitle)
-          .fontWeight(.heavy)
-          .multilineTextAlignment(.center)
-          .padding(.vertical, 8)
-          .foregroundColor(.primary)
-          .background(
-            Color("BlueColor")
-              .frame(height: 6)
-          )
-        
+    VStack(alignment: .center, spacing: 10) {
+      // Title
+      Text(healthCenter.name.uppercased() + "\n" + healthCenter.city.uppercased())
+        .font(.largeTitle)
+        .fontWeight(.heavy)
+        .multilineTextAlignment(.center)
+        .padding(.vertical, 8)
+        .foregroundColor(.primary)
+        .background(
+          Color("BlueColor")
+            .frame(height: 6)
+        )
+      
+      ScrollView {
         MapView(coordinate: healthCenter.locationCoordinate)
-                .ignoresSafeArea(edges: .top)
-                .frame(height: 300)
+          .ignoresSafeArea(edges: .top)
+          .frame(height: 300)
         
-        HeadingView(headingImage: "clock.fill", headingText: "\(healthCenter.hours)")
-      } //: VStack
-    } //: ScrollView
-  }
+        VStack {
+          HStack {
+            Text("Horário de Funcionamento:")
+            Spacer()
+            HeadingView(headingImage: "clock.fill", headingText: "\(healthCenter.hours)")
+          }
+          .padding()
+          
+          Spacer()
+          
+          HealthCenterDosesView(healthCenter: healthCenter)
+          
+        }
+      } //: ScrollView
+      Text("Desenvolvido por Arthur Neves")
+        .font(.footnote)
+        .fontWeight(.bold)
+        .foregroundColor(.accentColor)
+    } //: VStack
+    .padding()
+  } //: ScrollView
 }
 
 struct HealthCenterDetailView_Previews: PreviewProvider {
