@@ -8,17 +8,28 @@
 import SwiftUI
 
 struct HealthCenterListView: View {
+  @EnvironmentObject var viewStatus: ViewStatus
   let healthCenters: [HealthCenter]
   
-  
   var body: some View {
-    NavigationView {
-      List {
-        ForEach(healthCenters) { healthCenter in
-          Text("\(healthCenter.name)")
-        } //: ForEach
-      } //: List
-    } //: NavigationView
+    VStack {
+      NavigationBarView()
+        .padding(.top, 37)
+        .background(Color.white.frame(height: 100))
+      
+      NavigationView {
+          VStack {
+            
+            List {
+              ForEach(healthCenters) { item in
+                NavigationLink(destination: HealthCenterDetailView(healthCenter: item)) {
+                  Text("\(item.name) - \(item.city)")
+                }
+              } //: ForEach
+            } //: List
+          }
+      } //: NavigationView
+    } //: VStack
   }
 }
 
@@ -28,5 +39,6 @@ struct HealthCenterList_Previews: PreviewProvider {
   static var previews: some View {
     HealthCenterListView(healthCenters: healthCenters)
       .environmentObject(ModelData())
+      .environmentObject(ViewStatus())
   }
 }

@@ -21,7 +21,7 @@ struct HealthCenterDetailView: View {
           .padding(.vertical, 8)
           .foregroundColor(.primary)
           .background(
-            Color.blue
+            Color("BlueColor")
               .frame(height: 6)
           )
         
@@ -30,7 +30,6 @@ struct HealthCenterDetailView: View {
                 .frame(height: 300)
         
         HeadingView(headingImage: "clock.fill", headingText: "\(healthCenter.hours)")
-        
       } //: VStack
     } //: ScrollView
   }

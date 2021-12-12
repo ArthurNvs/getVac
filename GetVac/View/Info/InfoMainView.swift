@@ -29,7 +29,7 @@ struct InfoMainView: View {
             ScrollView(.horizontal, showsIndicators: false) {
               HStack {
                 AsyncImageView(imageURL: "https://www.saude.df.gov.br/wp-conteudo/uploads/2021/02/PONTOS_VAC_FDS.png")
-                AsyncImageView(imageURL: "https://www.saude.df.gov.br/wp-conteudo/uploads/2021/02/PONTOS_VAC_FDS.png")
+                AsyncImageView(imageURL: "https://www.saude.df.gov.br/wp-conteudo/uploads/2021/02/PONTOS_VAC_FDS-1-1.png")
               }
             }
             
@@ -46,7 +46,7 @@ struct InfoMainView: View {
           } //: ScrollView
           .padding()
         } //: VStack
-        .background(Color("BlueColor").ignoresSafeArea(.all, edges: .all))
+        //.background(Color(.lightGray).ignoresSafeArea(.all, edges: .all))
       } else {
         HealthCenterListView(healthCenters: ModelData().healthCenters)
       }

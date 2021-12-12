@@ -19,22 +19,33 @@ struct NavigationBarView: View {
       Text("GetVac")
         .font(.largeTitle)
         .fontWeight(.semibold)
-        //.shadow(color: Color.gray, radius: 3, x: 1, y: 1)
+      //.shadow(color: Color.gray, radius: 3, x: 1, y: 1)
         .foregroundColor(.accentColor)
         .offset(x: 0, y: isAnimated ? 0 : -25)
       
       Spacer()
       
-      Image(systemName: "list.triangle")
-        .font(.largeTitle)
-        .foregroundColor(.blue)
-        .padding()
-        .onTapGesture {
-          withAnimation(.easeOut) {
-            viewStatus.showList = true
+      if viewStatus.showList == false {
+        Image(systemName: "list.triangle")
+          .font(.title)
+          .foregroundColor(.blue)
+          .padding()
+          .onTapGesture {
+            withAnimation(.easeOut) {
+              viewStatus.showList = true
+            }
           }
-        }
-      
+      } else {
+        Image(systemName: "house.fill")
+          .font(.title)
+          .foregroundColor(.blue)
+          .padding()
+          .onTapGesture {
+            withAnimation(.easeOut) {
+              viewStatus.showList = false
+            }
+          }
+      }
     } //: HStack
     .onAppear(perform: {
       withAnimation(.easeOut(duration: 0.5)) {
@@ -50,5 +61,6 @@ struct NavigationBarView_Previews: PreviewProvider {
     NavigationBarView()
       .previewLayout(.sizeThatFits)
       .padding()
+      .environmentObject(ViewStatus())
   }
 }
