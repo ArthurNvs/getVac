@@ -10,6 +10,8 @@
 		E71F3DD327655F9C00B86C9F /* NavigationBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71F3DD227655F9C00B86C9F /* NavigationBarView.swift */; };
 		E71F3DD8276587AA00B86C9F /* ViewStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71F3DD7276587AA00B86C9F /* ViewStatus.swift */; };
 		E71F3DDA27659B2900B86C9F /* HealthCenterDosesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71F3DD927659B2900B86C9F /* HealthCenterDosesView.swift */; };
+		E73A0DC327668CBE000DAF59 /* GifImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E73A0DC227668CBE000DAF59 /* GifImage.swift */; };
+		E73A0DC527669171000DAF59 /* vacinometro.gif in Resources */ = {isa = PBXBuildFile; fileRef = E73A0DC427669171000DAF59 /* vacinometro.gif */; };
 		E78D4508276668160078311D /* HealthCenterItemListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78D4507276668160078311D /* HealthCenterItemListView.swift */; };
 		E7A19A992765323B00874A8C /* HealthCenterDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A19A982765323B00874A8C /* HealthCenterDetailView.swift */; };
 		E7A19A9C2765352D00874A8C /* CurrentTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A19A9B2765352D00874A8C /* CurrentTime.swift */; };
@@ -33,6 +35,8 @@
 		E71F3DD227655F9C00B86C9F /* NavigationBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarView.swift; sourceTree = "<group>"; };
 		E71F3DD7276587AA00B86C9F /* ViewStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewStatus.swift; sourceTree = "<group>"; };
 		E71F3DD927659B2900B86C9F /* HealthCenterDosesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthCenterDosesView.swift; sourceTree = "<group>"; };
+		E73A0DC227668CBE000DAF59 /* GifImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifImage.swift; sourceTree = "<group>"; };
+		E73A0DC427669171000DAF59 /* vacinometro.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = vacinometro.gif; sourceTree = "<group>"; };
 		E78D4507276668160078311D /* HealthCenterItemListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthCenterItemListView.swift; sourceTree = "<group>"; };
 		E7A19A982765323B00874A8C /* HealthCenterDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthCenterDetailView.swift; sourceTree = "<group>"; };
 		E7A19A9B2765352D00874A8C /* CurrentTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentTime.swift; sourceTree = "<group>"; };
@@ -86,6 +90,7 @@
 			children = (
 				E7A19A9F27653A3E00874A8C /* MapView.swift */,
 				E7A19AA227653E9600874A8C /* MapAnnotationView.swift */,
+				E73A0DC227668CBE000DAF59 /* GifImage.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -154,6 +159,7 @@
 		E7B4E6DA27650D99009464B1 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				E73A0DC427669171000DAF59 /* vacinometro.gif */,
 				E7B4E6E827652132009464B1 /* healthCenterData.json */,
 			);
 			path = Resources;
@@ -241,6 +247,7 @@
 			files = (
 				E7B4E6CE27650B28009464B1 /* Preview Assets.xcassets in Resources */,
 				E7B4E6E927652132009464B1 /* healthCenterData.json in Resources */,
+				E73A0DC527669171000DAF59 /* vacinometro.gif in Resources */,
 				E7B4E6CB27650B28009464B1 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -254,6 +261,7 @@
 			files = (
 				E71F3DDA27659B2900B86C9F /* HealthCenterDosesView.swift in Sources */,
 				E7A19AA52765512C00874A8C /* AdditionalInfo.swift in Sources */,
+				E73A0DC327668CBE000DAF59 /* GifImage.swift in Sources */,
 				E7A19AA327653E9600874A8C /* MapAnnotationView.swift in Sources */,
 				E7B4E6E727651F47009464B1 /* HealthCenterListView.swift in Sources */,
 				E7B4E6EC27652BCB009464B1 /* InfoMainView.swift in Sources */,
@@ -406,7 +414,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -436,7 +444,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

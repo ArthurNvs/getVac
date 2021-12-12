@@ -25,26 +25,31 @@ struct InfoMainView: View {
             .background(Color.white.frame(height: 100))
             .shadow(color: Color.black.opacity(0.05), radius: 5, x: 0, y: 5)
           
+          Spacer()
+          
+          
+          Spacer()
+          
           VStack {
-            ScrollView(.horizontal, showsIndicators: false) {
-              HStack {
-                AsyncImageView(imageURL: "https://www.saude.df.gov.br/wp-conteudo/uploads/2021/02/PONTOS_VAC_FDS.png")
-                AsyncImageView(imageURL: "https://www.saude.df.gov.br/wp-conteudo/uploads/2021/02/PONTOS_VAC_FDS-1-1.png")
-              }
-            }
-            
-            Spacer()
-            
-            AdditionalInfo()
-            
-            Spacer()
-            
-            Text("Dados disponibilizados pela Secretaria de Saúde")
-              .font(.footnote)
-              .fontWeight(.bold)
-              .foregroundColor(.accentColor)
-          } //: VStack
-          .padding()
+            AsyncImageView(imageURL: "https://www.saude.df.gov.br/wp-conteudo/uploads/2021/02/PONTOS_VAC_FDS-1-1.png")
+            //https://www.saude.df.gov.br/wp-conteudo/uploads/2021/01/Cobertura-vacinal.png
+              .frame(height: 370)
+          }
+          Text("Postos de vacinação COVID-19 (\(getDate()))")
+            .italic()
+            .font(.footnote)
+            .fontWeight(.bold)
+            .foregroundColor(.gray)
+          
+          AdditionalInfo()
+            .padding()
+          
+          Spacer()
+          
+          Text("Dados disponibilizados pela Secretaria de Saúde")
+            .font(.footnote)
+            .fontWeight(.bold)
+            .foregroundColor(.accentColor)
         } //: VStack
       } else {
         HealthCenterListView(healthCenters: ModelData().healthCenters)
