@@ -25,7 +25,6 @@ struct HealthCenterDetailView: View {
               .frame(height: 6)
           )
         
-        
         MapView(coordinate: healthCenter.locationCoordinate)
                 .ignoresSafeArea(edges: .top)
                 .frame(height: 300)

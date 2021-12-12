@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E71F3DD327655F9C00B86C9F /* NavigationBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71F3DD227655F9C00B86C9F /* NavigationBarView.swift */; };
 		E7A19A992765323B00874A8C /* HealthCenterDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A19A982765323B00874A8C /* HealthCenterDetailView.swift */; };
 		E7A19A9C2765352D00874A8C /* CurrentTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A19A9B2765352D00874A8C /* CurrentTime.swift */; };
 		E7A19A9E276536F400874A8C /* HeadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A19A9D276536F400874A8C /* HeadingView.swift */; };
 		E7A19AA027653A3E00874A8C /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A19A9F27653A3E00874A8C /* MapView.swift */; };
 		E7A19AA327653E9600874A8C /* MapAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A19AA227653E9600874A8C /* MapAnnotationView.swift */; };
 		E7A19AA52765512C00874A8C /* AdditionalInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A19AA42765512C00874A8C /* AdditionalInfo.swift */; };
+		E7A19AA72765572E00874A8C /* AsyncImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A19AA62765572E00874A8C /* AsyncImageView.swift */; };
 		E7B4E6C727650B28009464B1 /* GetVacApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B4E6C627650B28009464B1 /* GetVacApp.swift */; };
 		E7B4E6C927650B28009464B1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B4E6C827650B28009464B1 /* ContentView.swift */; };
 		E7B4E6CB27650B28009464B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7B4E6CA27650B28009464B1 /* Assets.xcassets */; };
@@ -25,12 +27,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E71F3DD227655F9C00B86C9F /* NavigationBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarView.swift; sourceTree = "<group>"; };
 		E7A19A982765323B00874A8C /* HealthCenterDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthCenterDetailView.swift; sourceTree = "<group>"; };
 		E7A19A9B2765352D00874A8C /* CurrentTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentTime.swift; sourceTree = "<group>"; };
 		E7A19A9D276536F400874A8C /* HeadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadingView.swift; sourceTree = "<group>"; };
 		E7A19A9F27653A3E00874A8C /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		E7A19AA227653E9600874A8C /* MapAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapAnnotationView.swift; sourceTree = "<group>"; };
 		E7A19AA42765512C00874A8C /* AdditionalInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdditionalInfo.swift; sourceTree = "<group>"; };
+		E7A19AA62765572E00874A8C /* AsyncImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncImageView.swift; sourceTree = "<group>"; };
 		E7B4E6C327650B28009464B1 /* GetVac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GetVac.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7B4E6C627650B28009464B1 /* GetVacApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetVacApp.swift; sourceTree = "<group>"; };
 		E7B4E6C827650B28009464B1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -154,6 +158,8 @@
 			children = (
 				E7B4E6EB27652BCB009464B1 /* InfoMainView.swift */,
 				E7A19AA42765512C00874A8C /* AdditionalInfo.swift */,
+				E7A19AA62765572E00874A8C /* AsyncImageView.swift */,
+				E71F3DD227655F9C00B86C9F /* NavigationBarView.swift */,
 			);
 			path = Info;
 			sourceTree = "<group>";
@@ -240,6 +246,8 @@
 				E7B4E6C927650B28009464B1 /* ContentView.swift in Sources */,
 				E7A19AA027653A3E00874A8C /* MapView.swift in Sources */,
 				E7A19A9C2765352D00874A8C /* CurrentTime.swift in Sources */,
+				E7A19AA72765572E00874A8C /* AsyncImageView.swift in Sources */,
+				E71F3DD327655F9C00B86C9F /* NavigationBarView.swift in Sources */,
 				E7B4E6C727650B28009464B1 /* GetVacApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
