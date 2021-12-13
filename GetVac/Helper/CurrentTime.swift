@@ -25,11 +25,11 @@ func getHour() -> String {
 }
 
 func getGreeting() -> String {
-  if Int(getHour())! < 19 && Int(getHour())! > 12 {
+  if Int(getHour())! < 19 && Int(getHour())! > 11 {
     return "Olá, boa tarde!"
   }
   
-  if Int(getHour())! < 12 && Int(getHour())! > 23 {
+  if Int(getHour())! < 12 && Int(getHour())! > 00 {
     return "Olá, bom dia!"
   }
   
@@ -37,11 +37,12 @@ func getGreeting() -> String {
 }
 
 func getHourImage() -> String {
-  if Int(getHour())! < 19 && Int(getHour())! > 12 {
+  print(getHour())
+  if Int(getHour())! < 19 && Int(getHour())! > 11 {
     return "sun.max.fill"
   }
   
-  if Int(getHour())! < 12 && Int(getHour())! > 23 {
+  if Int(getHour())! < 12 && Int(getHour())! > 00 {
     return "sunrise.fill"
   }
   
